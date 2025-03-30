@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro - StoryTeller Project</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>StoryTeller Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="views/stories.html">Stories</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="register-form">
+                <h2>Registro de usuario</h2>
+                <form id="userRegistrationForm" action="../php/register_user.php"
+                    method="POST">
+
+                    <div class="form-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" id="username" name="username"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmación de
+                            Contraseña</label>
+                        <input type="password" id="confirmPassword"
+                            name="confirmPassword" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Registrarse</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 StoryTeller Project</p>
+        </footer>
+        <script src="../js/register_validation.js"></script>
+
+    </body>
+</html>
